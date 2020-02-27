@@ -18,7 +18,7 @@ El ejercicio presenta múltiples desafíos, que para ser abordados se decidió d
 ## Posicionamiento y creación del tablero. 
 1.	Se crearon 3 matrices bidimensionales en las cuales se registran las coordenadas de los vehículos que harán parte del tablero. Un arreglo C, K y T, cada uno para su respectivo vehículo. Ademas, se crea una matriz bidimensional auxiliar, que superpone los diferentes arreglos con la finalidad de determinar la posición de los cuerpos de cada vehículo. 
 2.	Luego de crear dichas matrices, se rellenaron con 0. Esto se hace para luego rellenar con 1s las posiciones de la matriz en la cual existen vehículos. 
-3.	Se llama al método math.random para asignar las coordenadas aleatorias para 10 espacios del arreglo T, y C y finalmente 9 espacios del arreglo K. 
+3.	Se llama al método math.random para asignar las coordenadas aleatorias para 10 espacios del arreglo T, y C y finalmente 9 espacios del arreglo K. A su vez, el método crearCarros sirve para asignar cada carro dos variables x, y, las cuales determinarán su posición en el tablero y serán registradas en un arreglo para luego ser mostradas a pedido del jugador.
 4.	Para prevenir la superposición de los diferentes vehículos en nuestro tablero de 15x15, optamos por comparar las coordenadas de todos los arreglos T, C y K, y de existir algún arreglo con las mismas coordenadas que el nuevo espacio a registrar, este se calcularía de nuevo hasta encontrar un espacio que no esté ocupado por alguno de los otros vehículos.  Se procede así a asignar las coordenadas en el tablero de las Trupallas, Caguanos y Kromis.
 5.	Finalmente, se genera el tablero mostrando en pantalla una serie de líneas que conforman un tablero de 15x15 a través de ciclos for. A su vez, se recorren los arreglos K, T,C y de haber un 1 en las coordenadas actual del ciclo, se imprime la letra correspondiente al arreglo.
 
@@ -36,5 +36,6 @@ puntaje=puntaje+bonusKromi;}}
 Si bien esta respuesta parecía ser suficiente, no consideraba la posibilidad de generar Kromis o Caguanos en fila, por lo tanto, se optó por utilizar el arreglo auxiliar, el cual siempre encontrará la “cabeza” de la Kromi o el Caguano.
 
 ## Limites 
-No se creo el método datosBasicos. 
-A su vez, está ausente el arraylist en el cual se registran los lanzamientos realizados por el usuario. 
+
+Está ausente el arraylist en el cual se registran los lanzamientos realizados por el usuario.
+
